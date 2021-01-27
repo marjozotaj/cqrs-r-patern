@@ -4,3 +4,6 @@ obj
 .DS_Store
 *.db
 publish
+.vs/api-solution/DesignTimeBuild/.dtbcache.v2
+.vs/api-solution/v16/.suo
+.vs/api-solution/v16/.suo
