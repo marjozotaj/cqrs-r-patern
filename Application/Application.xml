@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Application</name>
+    </assembly>
+    <members>
+        <member name="P:Application.PhoneBook.Create.CreateCommand.Name">
+            <summary>
+            The name of the entry
+            </summary>
+            <example>John Doe</example>
+        </member>
+        <member name="P:Application.PhoneBook.Create.CreateCommand.PType">
+            <summary>
+            The type of phone book entry
+            </summary>
+            <example>Cellphone</example>
+        </member>
+        <member name="P:Application.PhoneBook.Create.CreateCommand.Number">
+            <summary>
+            The phone number
+            </summary>
+            <example>+355696542518</example>
+        </member>
+        <member name="P:Application.PhoneBook.Edit.EditCommand.Name">
+            <summary>
+            The name of the entry
+            </summary>
+            <example>John Doe</example>
+        </member>
+        <member name="P:Application.PhoneBook.Edit.EditCommand.PType">
+            <summary>
+            The type of phone book entry
+            </summary>
+            <example>Cellphone</example>
+        </member>
+        <member name="P:Application.PhoneBook.Edit.EditCommand.Number">
+            <summary>
+            The phone number
+            </summary>
+            <example>+355696542518</example>
+        </member>
+    </members>
+</doc>

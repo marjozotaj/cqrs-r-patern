@@ -8,6 +8,9 @@ using Microsoft.OpenApi.Models;
 using Microsoft.Extensions.Hosting;
 using Presistence.DAL;
 using System.Text.Json.Serialization;
+using System.IO;
+using System.Reflection;
+using System;
 
 namespace API
 {
@@ -32,6 +35,14 @@ namespace API
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
+                
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                var xmlPathApplication = Path.Combine(AppContext.BaseDirectory, "Application.xml");
+                var xmlPathDomain = Path.Combine(AppContext.BaseDirectory, "Domain.xml");
+                c.IncludeXmlComments(xmlPath);
+                c.IncludeXmlComments(xmlPathApplication);
+                c.IncludeXmlComments(xmlPathDomain);
               
             });
             

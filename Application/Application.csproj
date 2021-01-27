@@ -1,16 +1,25 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <ProjectReference Include="..\Domain\Domain.csproj"/>
-    <ProjectReference Include="..\Presistence\Presistence.csproj"/>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Presistence\Presistence.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0"/>
-    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0"/>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3"/>
-    <PackageReference Include="FluentValidation.AspNetCore" Version="9.4.0"/>
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.4.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Application.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\devo0\Source\Repos\api-solution\Application\Application.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
   </PropertyGroup>
 </Project>

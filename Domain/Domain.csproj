@@ -3,6 +3,10 @@
     <TargetFramework>net5.0</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+    <DocumentationFile>C:\Users\devo0\Source\Repos\api-solution\Domain\Domain.xml</DocumentationFile>
+  </PropertyGroup>
   <ItemGroup>
   </ItemGroup>
 </Project>

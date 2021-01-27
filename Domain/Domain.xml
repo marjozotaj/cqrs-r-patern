@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Domain</name>
+    </assembly>
+    <members>
+        <member name="P:Domain.PhoneBook.Name">
+            <summary>
+            The name of the entry
+            </summary>
+            <example>John Doe</example>
+        </member>
+        <member name="P:Domain.PhoneBook.PType">
+            <summary>
+            The type of phone book entry
+            </summary>
+            <example>Cellphone</example>
+        </member>
+        <member name="P:Domain.PhoneBook.Number">
+            <summary>
+            The phone number
+            </summary>
+            <example>+355696542518</example>
+        </member>
+    </members>
+</doc>

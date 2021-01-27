@@ -1,0 +1,2 @@
+On this folder the application will create a new .json file for every repository that will be created.
+Every file substitutes the respective database table.
