@@ -1,1 +1,1 @@
-# Command Query Responsibility Segregation(cqrs) and Repository Patern
+# Command Query Responsibility Segregation(cqrs), Mediator and Repository Patern
